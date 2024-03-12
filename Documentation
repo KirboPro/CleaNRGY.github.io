@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>CleaNRGY</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="x-icon" href="images/Logo (No Words).png">
+    </head>
+    <body>
+        <section id="welcome">
+        <div class="banner">
+            <div class="navbar">
+                <img src="images/Logo.png" class="logo">
+            </div>
+
+            <div class="content">
+                <h1>Documentation</h1>
+                <p>Not all of the links here were used for the final product but we as a team have decided to leave them here since they were still part of out brainstorming</p>
+                <p>Water Use Calculator - Calculates your water usage on a daily, weekly, monthly, and yearly basis. This may show a person how much they waste daily.
+                    Ways to Reduce Your Carbon Footprint shows how people can contribute to the clean energy initiative. 
+                    Energy Saving Techniques shows 7 ways to reduce your energy consumption.  
+                    Invest in Blue Sky. Allows people to donate to Renewable Energy Projects in the state of Utah.
+                    Reduce Your Energy Use
+                    Thermwise.com. Gives people somewhat of an understanding of some things that people can do in their homes to save on energy, as well as help out the environment.
+                    energystar.gov. Informs people on how to save energy and the environment with their washing machines 
+                    energy.gov. Allows people to understand that by using LEDs instead of the regular incandescent lightbulbs, 15% of an average home's electricity use, and the average household saves about $225 in energy costs per year by using LED lighting.
+                    Sustainable Food
+                     Environmental Impacts of Food Production - Our World in Data Allows people to understand which foods are best for sustainable agricultural practices, and are better for the environment.
+                    Dine with Discretion. Allows people to understand the impact that their food choices have on the world, and what they can do against it</p>
+                <div>
+                        <button type="submit" class="btn" onclick="openPopup()">Back?</button>
+                        <div class="popup" id="popup">
+                            <button type="button" onclick="location.href='information.html'"><span></span>Information</button>
+                            <button type="button" onclick="location.href='index.html'"><span></span>Cover</button>
+                            <button type="button" onclick="closePopup()">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+<!--footer-->
+<div class="footer-row">
+    <div class="footer-left">
+        <p>Slc.gov Allows people to understand where our clean tap water comes from with beautiful, easy-to-understand images and slides and tells us how to protect our watersheds
+                     Momentum Recycling Allows people to sign up to have their food scraps collected for about 8.50 a month, with a $55 fee, this will go towards making the environment better by turning the scraps into fertilizers and natural gas that powers people's homes
+                     drop off their food waste This allows people to drop off their food waste for free at bins at the Wasatch Resource Recovery, 1370 W Center St, North Salt Lake, UT 84054
+                    Transportation
+                    slc.gov/transportation/hivepass allows people that live within the salt lake city area to purchase a heavily discounted pass that allows the buyer unlimited access or discounted access to most of the public transportation within the state such as the UTA local bus service, TRAX, the S-Line streetcar, UTA On Demand, and FrontRunner. 
+                    GreenBIKE. This is a low-cost bike-sharing program available in downtown Salt Lake City, allowing people to pay either from $3-$75 depending on how often youll use them, to travel around on e-bikes or regular bikes, allowing for some quality fresh air in a beautiful, scenic area. 
+                    FuelEconomy.gov. Gives people some tips on how to save money and the environment by doing certain practices.</p>
+    </div>
+    <div class="footer-right">
+        <p>Around the Home
+            Ditch the disposables. Manufacturing bottles, cans, and other drink containers takes energy and creates emissions. Reduce your footprint and save cash by using reusables. SLC residents can explore SLCgreen for many more waste tips and additional ways to save, like downsizing your garbage can. Moving from a 90-gallon bin to a 40-gallon bin will save you $87 / year on your trash bill.
+            Weatherization. Weatherizing your home helps you save money by saving energy, and it can also improve the comfort of your home.
+            Incentives & rebates. Explore available incentives and rebates for energy conservation.
+            Improve Air Quality
+            Stay informed. Sign up for air quality email alerts provided by the Utah Department of Air Quality, or download the UtahAir app for iPhone or Android. Take action on “voluntary” days– those days when an inversion is forecasted but air pollution is not yet unhealthy. This is when we have the greatest opportunity to make a difference!
+            Wood burning. One of the most common sense measures is to not burn wood in the winter. Wood burning is a big polluter — one wood burning stove puts out as much pollution as 3,000 natural gas furnaces or 90 sport utility vehicles!
+            Stay idle free. This is one of the easiest things you can do to have a positive impact. Idling wastes gas and money and adds unnecessary pollution into our air. Plus when you idle, you’re exposing yourself and your passengers to higher levels of harmful pollutants.
+            Avoid VOC’s. VOC’s can be a big problem and they’re in a lot of products—so you use low-VOC paint, non-aerosol personal care products, and other home supplies like carpet cleaner and air freshener that are certified by the EPA’s “Design for Environment” program.
+            Electrified transportation. From ozone in the summer to particulate matter pollution in the winter, we are consistently breathing in harmful pollution. Transportation accounts for most of our local air pollution. Electric cars are the cleanest option for passenger vehicles – they don’t even have tailpipes!</p>
+    </div>
+</div>
+</section>
+<script>
+let popup = document.getElementById("popup")
+                
+                    function openPopup(){
+                        popup.classList.add("open-popup")
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup")
+                    }
+</script>
+    </body>
+</html>
