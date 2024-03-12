@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <title>CleaNRGY</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="x-icon" href="images/Logo (No Words).png">
+    </head>
+    <body>
+        <section id="welcome">
+        <div class="banner">
+            <div class="navbar">
+                <img src="images/Logo.png" class="logo">
+            </div>
+            <div class="content">
+                <h1>Ready To Head Back?</h1>
+                <p>Scroll down to view information. Clicking on "yes" will just take you back to the first page where you can find our intro and our contact and social media info</p>
+                <div>
+                        <button type="submit" class="btn" onclick="openPopup()">Yes</button>
+                        <div class="popup" id="popup">
+                            <img src="images/Logo (No Words).png">
+                            <button type="button" onclick="location.href='index.html'"><span></span>Take Me back</button>
+                            <button type="button" onclick="location.href='Documentation.html'"><span></span>Documentation</button>
+                            <button type="button" onclick="closePopup()">Not Yet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#welcome">HEAD BACK<br>TO COVER</a></li>
+            <li><a href="#mission">MISSION</a></li>
+            <li><a href="#info">INFORMATION</a></li>
+            <li><a href="#methods">METHODS</a></li>
+            <li><a href="#costs">COSTS</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="images/Menu.png" id="menu">
+</div>
+</section>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+sideNav.style.right = "-250px";
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sideNav.style.right = "-250px";
+        menu.src = "images/menu.png";
+    }
+}
+let popup = document.getElementById("popup")
+                
+                    function openPopup(){
+                        popup.classList.add("open-popup")
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup")
+                    }
+</script>
+
+
+<!--Mission-->
+<section id="mission">
+    <div class="title-text">
+        <p>Mission</p>
+        <h1>Mission Statement:</h1>
+    </div>
+<div class="feature-box">
+    <div class="features">
+        <h1>Number 1</h1>
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>Provide comprehensive information to homeowners on measures they can employ to significantly reduce their use of fossil-fuels, minimize their environmental impact, and make their homes more eco-friendly.</p>
+            </div>
+        </div>
+        <h1>Number 2</h1>
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>Present homeowners with diverse methods, strategies, and techniques aimed at transforming their homes into environmentally-friendly spaces.</p>
+            </div>
+        </div>
+        <h1>Number 3</h1>
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>
+                    Offer homeowners detailed information on the costs of implementing green and clean energy home solutions, along with guidance on available tax rebate incentives, empowering informed decisions about sustainable upgrades.</p>
+            </div>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="images/Mission.png">
+    </div>
+</div>
+</section>
+<!--Info-->
+<section id="info">
+    <div class="title-text">
+        <p>Information</p>
+        <h1>How to reduce<br>your fossil-fuels at home</h1>
+    </div>
+    <div class="testimonial-row">
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="images/Energy.png">
+                <div class="user-info">
+                    <h4>Switch to Renewable Energy</h4>
+                    <small>Shift To Renewables For Cleaner Essentials</small>
+                </div>
+            </div>
+            <p>Installing solar panels or wind turbines is great for clean electricity. You could also consider geothermal heat pumps for efficient heating and cooling</p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="images/Light.png">
+                <div class="user-info">
+                    <h4>Energy-Efficient Appliances</h4>
+                    <small>Out With The Old<br>In With The New</small>
+                </div>
+            </div>
+            <p>Replacing old appliances with ENERGY STAR-rated models is a great way to make your home more eco-friendly. Improving insulation and using programmable thermostats is also good</p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+                <img src="images/Car.png">
+                <div class="user-info">
+                    <h4>Transportation Alternative</h4>
+                    <small>Trade Your Old Wheels<br>For Eco Appeals</small>
+                </div>
+            </div>
+            <p>A better way to get around while still being eco-friendly is by choosing an electric or hybrid vehicle. Another good way to get around is by simply walking or biking</p>
+        </div>
+    </div>
+</section>
+<!--Methods-->
+<section id="methods">
+    <div class="title-text">
+        <p>Methods</p>
+        <h1>How to become eco-friendly</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="images/Water.png">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Water Use</h3>
+                <hr>
+                <p>On average a typical person in the United States uses around 80-100 gallons of water per day on various task around the house such as bathing or showering, flushing toilets, washing dishes and doing laundry. To fix this we can fix any leaks, use water-efficient fixtures, take shorter showers or baths, wait for full loads before doing laundry, and collect and use rain water to water plants</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/CO2.png">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>CO2 Emissions</h3>
+                <hr>
+                <p>According to the United States Environmental Protection Agency (EPA), the average annual CO2 emmissions per person in the United States is around 16 metic tons. This includes emissions from various sources such as transportation, electricity generation, heating, and industrial activities. To fix this we can use energy-efficient appliances and solar panels, opt for fuel-efficient or electric vehicles, conserve water and minimize waste, and practice green landscaping which is making a functional outdoor space that supports biodiversity, and conserves natural resources</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/Electricity.png">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Electricity Use</h3>
+                <hr>
+                <p>According to the United States Energy Information Administration (EIA), the average residential electricity consumption per capita in the United States was around 10,399 kWh (Kilowatt-hours) per year. To fix this we can use energy-efficient appliances, turn off lights/appliances when not in use, seal air leaks, unplug electronics, and consider solar power. You can also use LED lightbulbs. By using LEDs instead of the regular incandescent lightbulbs, 15% of an average home's electricity use, and the average household saves about $225 in energy costs per year by using LED lighting.
+                </p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="images/Food.png">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>Food Production</h3>
+                <hr>
+                <p>You may not think so but eating certain foods can actually be damaging to the environment. Non-eco-friendly food choices, such as heavily processed or animal-based foods, contribute to environmental issues like greenhouse gas emissions and habitat destruction. What makes it non-eco-friendly are factors like production methods and transportation. Choosing more plant-based, locally sourced, and sustainable options can reduce environmental impact and help us become more eco-friendly at home.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Costs-->
+<section id="costs">
+    <div class="title-text">
+        <p>Costs</p>
+        <h1>For Eco-Friendly Homes</h1>
+    </div>
+<div class="feature-box">
+    <div class="features">
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>The cost of an averagely eco-friendly house can vary depending on several factors, including location, size, construction materials, and desired eco-friendly features.</p>
+            </div>
+        </div>
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>Generally, building or retrofitting a home with eco-friendly features such as energy-efficient appliances, insulation, windows, and heating/cooling systems would cost around 5%-20% more than the average home. However, the long-term savings on energy bills and potential incentives or rebates for eco-friendly features can offset some of these upfront costs.</p>
+            </div>
+        </div>
+        <div class="features-desc">
+            <div class="feature-icon">
+            </div>
+            <div class="feature-text">
+                <p>
+                    But the exact cost can vary widely depending on specific design choices and regional factors. It's important to consider the long-term benefits of an eco-friendly home, including reduced energy costs, improved indoor air quality, and a smaller environmental footprint, when evaluating the overall cost.</p>
+            </div>
+        </div>
+    </div>
+    <div class="features-img">
+        <img src="images/$$$.png">
+    </div>
+</div>
+</section>
